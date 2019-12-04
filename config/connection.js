@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const { DATABASE_HOST, DATABASE_NAME } = require("./environment");
 mongoose
-  .connect(`${DATABASE_HOST}/${DATABASE_NAME}`, {
+  .connect(`${DATABASE_HOST}`, {
     useUnifiedTopology: true,
     useNewUrlParser: true
   })
